@@ -230,7 +230,7 @@ def dijkstras_shortest_path(routers, src_ip, dest_ip):
         to_visit.add(node)
     distance[src_ip] = 0
     
-    while len(to_visit)!=0:
+    while to_visit:
         
         current_node = grab_current_node(to_visit, distance)
         
